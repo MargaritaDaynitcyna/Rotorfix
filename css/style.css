@@ -1392,6 +1392,30 @@ li {
   margin-left: -25px;
   z-index: -1;
 }
+.adress__img {
+  position: relative; width: 100%; height: 100;
+}
+.maps__mark {
+   position: absolute;
+   height: 13%;
+   width: 5%;
+}
+.maps__svg-color {
+  fill: var(--orange);
+}
+.maps__svg-color-active {
+  fill: var(--blue);
+}
+.maps__mark-1 {
+  top: calc(63% - 7.5%);
+  left: calc(6.5% - 2.5%);
+}
+.maps__mark-100 {
+  top: calc(47% - 7.5%);
+  left: calc(39.5% - 2.5%);
+}
+
+
 
 /* ! wholesale*/
 
