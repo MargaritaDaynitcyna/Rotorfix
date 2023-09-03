@@ -923,6 +923,38 @@ li {
     top: auto;
     left: 105px;
     margin-left: -85px;
+    margin-bottom: 8px;
+    padding: 10px;
+    min-width: fit-content;
+  }
+
+  .maps__mark-8 .maps__info,
+  .maps__mark-9 .maps__info,
+  .maps__mark-10 .maps__info,
+  .maps__mark-11 .maps__info,
+  .maps__mark-12 .maps__info,
+  .maps__mark-13 .maps__info,
+  .maps__mark-14 .maps__info {
+    left: -6px;
+    right: auto;
+  }
+
+  .maps__mark-15 .maps__info,
+  .maps__mark-16 .maps__info,
+  .maps__mark-17 .maps__info,
+  .maps__mark-18 .maps__info,
+  .maps__mark-19 .maps__info {
+    right: -20px;
+  }
+
+  .maps__info .fs16 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .maps__info .fs25 {
+    font-size: 16px;
+    line-height: 16px;
   }
 
   .footer__nav {
