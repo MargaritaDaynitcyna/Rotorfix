@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RotorFix</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styleShops.css">
+    <script defer src="./js/shops.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main" id="main">
+            <div class="container header__container">
+                <div class="logo header__logo">
+                    <img src="./img/logo.png" alt="Лого" class="logo__img">
+                    <div class="logo__text fs11 fw600 lh14">
+                        Экспертные решения для укладки плитки
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <button class="burger" id="burger" name="Меню">
+                        <svg class="burger__icon" width="24" height="24" viewBox="0 0 24 24" fill="black"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="24" height="3" rx="1.5" />
+                            <rect y="21" width="24" height="3" rx="1.5" />
+                            <rect y="11" width="24" height="3" rx="1.5" />
+                        </svg>
+                    </button>
+                    <nav class="nav" id="menu">
+                        <button class="close" id="close" name="Закрыть">
+                            <svg class="close__icon" width="24" height="24" viewBox="0 0 24 24" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="4.5752" y="2.95406" width="24" height="3" rx="1.5"
+                                    transform="rotate(45 4.5752 2.95406)" fill="black" />
+                                <rect x="21.5459" y="5.07538" width="24" height="3" rx="1.5"
+                                    transform="rotate(135 21.5459 5.07538)" fill="black" />
+                            </svg>
+                        </button>
+                        <ul class="nav__list fs13 lh17">
+                            <li class="nav__item"><a class="nav__link" target="_blank"
+                                    href="https://www.ozon.ru/">Купить на OZON</a>
+                            </li>
+                            <li class="nav__item"><a class="nav__link" target="_blank" href="./dealer.html">Стать
+                                    дилером</a></li>
+                            <li class="nav__item"><a class="nav__link" target="_blank" href="./wholesalers.html">Купить
+                                    оптом</a></li>
+                            <li class="nav__item"><a class="nav__link" target="_blank" href="./shops.html">Офлайн
+                                    магазины</a></li>
+                            <li class="nav__item"><a class="nav__link" target="_blank"
+                                    href="./contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="contacts header__contacts">
+                    <a href="tel:+7 (495) 123 00 00" class="contacts__tel fw800">8 495 123-00-00</a>
+                    <a href="https://api.whatsapp.com/send/?phone=+74951230000" class="whatsapp contacts__whatsapp">
+                        <svg class="whatsapp__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px"
+                            height="50px">
+                            <path
+                                d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z" />
+                        </svg>
+                        <p class="watsapp__text fs10 fw600 lh13">Написать в WhatsApp</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container main__container">
+                <div class="main__content">
+                    <h1 class="main__title fs65 fw700 lh70">
+                        Покупайте где вам удобно:
+                    </h1>
+                </div>
+                <div class="main__shopping shopping">
+                    <a class="btn btn-blue shopping__ozon" href="https://www.ozon.ru/" role="button">
+                        Купить на OZON
+                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.5843 8.20711C17.9748 7.81658 17.9748 7.18342 17.5843 6.79289L11.2203 0.428932C10.8298 0.0384078 10.1966 0.0384078 9.80611 0.428932C9.41559 0.819457 9.41559 1.45262 9.80611 1.84315L15.463 7.5L9.80611 13.1569C9.41559 13.5474 9.41559 14.1805 9.80611 14.5711C10.1966 14.9616 10.8298 14.9616 11.2203 14.5711L17.5843 8.20711ZM0.258301 8.5H16.8772V6.5H0.258301V8.5Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a class="btn btn-black shopping__opt" href="./wholesalers.html" role="button">
+                        Купить оптом
+                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.5843 8.20711C17.9748 7.81658 17.9748 7.18342 17.5843 6.79289L11.2203 0.428932C10.8298 0.0384078 10.1966 0.0384078 9.80611 0.428932C9.41559 0.819457 9.41559 1.45262 9.80611 1.84315L15.463 7.5L9.80611 13.1569C9.41559 13.5474 9.41559 14.1805 9.80611 14.5711C10.1966 14.9616 10.8298 14.9616 11.2203 14.5711L17.5843 8.20711ZM0.258301 8.5H16.8772V6.5H0.258301V8.5Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="address">
+            <div class="container address__container">
+                <h2 class="section-title address__title fw800">
+                    или в офлайн магазинах-партнёрах
+                </h2>
+                <div class="adress__show show">
+                    <button class="show__cart show__btn show__btn-is-active fs15 fw600 lh24">
+                        Показать на карте
+                    </button>
+                    <button class="show__list show__btn fs15 fw600 lh24">
+                        Показать списком
+                    </button>
+                </div>
+                <div class="adress__img maps">
+                    <img src="./img/cart.png" alt="Карта">
+                    <div class="maps__mark maps__mark-1">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-2">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-3">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-4">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-5">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-6">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-7">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-8">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-9 maps__mark-active">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color maps__svg-color-active" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color maps__svg-color-active" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color maps__svg-color-active" />
+                            </svg>
+                            <div class="grey-block maps__info maps__info-active">
+                                <p class="maps__shop fs25 fw700">магазин “Мастер-дом”</p>
+                                <p class="fs16">Москва, Березовая аллея 16</p>
+                                <p class="fs16">8 (495) 345-00-09</p>
+                                <p class="fs16">https://www.master-dom.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-10">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-11">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-12">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-13">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-14">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-15">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-16">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-17">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-18">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps__mark maps__mark-19">
+                        <div class="maps__content">
+                            <svg class="maps__svg" width="49" height="73" viewBox="0 0 49 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24.5" cy="24.5" r="24.5" class="maps__svg-color" />
+                                <path d="M24.5 72.0293L3.42995 36.5043L45.08 37.4843L24.5 72.0293Z"
+                                    class="maps__svg-color" />
+                                <path
+                                    d="M31.4894 12.4317L36.1701 12.8309L36.5694 17.5118L16.8478 37.2334L12.1326 36.4291L11.7677 32.1534L31.4894 12.4317Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.9408 17.5118L12.34 12.8312L17.0208 12.4318L36.7425 32.1534L35.9381 36.8687L31.6624 37.2335L11.9408 17.5118Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2259 29.8046L19.1459 24.7246L24.2259 19.6446L29.3059 24.7246L24.2259 29.8046Z"
+                                    class="maps__svg-color" />
+                            </svg>
+                            <div class="grey-block maps__info">
+                                <p class="maps__shop fs25 fw700">магазин “Название”</p>
+                                <p class="fs16">Город, Адресс, удица, дом</p>
+                                <p class="fs16">8 (000) 000-00-00</p>
+                                <p class="fs16">https://www.mail.pro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__top">
+                    <div class="logo footer__logo">
+                        <img src="./img/logo.png" alt="Лого" class="logo__img">
+                        <div class="logo__text fs11 fw600 lh14">
+                            Экспертные решения <br> для укладки плитки
+                        </div>
+                    </div>
+                    <div class="footer__nav">
+                        <nav class="nav">
+                            <ul class="nav__list fs13 lh17">
+                                <li class="nav__item"><a class="nav__link" target="_blank"
+                                        href="https://www.ozon.ru/">Купить на OZON</a>
+                                </li>
+                                <li class="nav__item"><a class="nav__link" target="_blank" href="./dealer.html">Стать
+                                        дилером</a></li>
+                                <li class="nav__item"><a class="nav__link" target="_blank"
+                                        href="./wholesalers.html">Купить оптом</a></li>
+                                <li class="nav__item"><a class="nav__link" target="_blank" href="./shops.html">Офлайн
+                                        магазины</a></li>
+                                <li class="nav__item"><a class="nav__link" target="_blank"
+                                        href="./contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="contacts footer__contacts">
+                        <a href="tel:+7 (495) 123 00 00" class="contacts__tel fw800">8 495 123-00-00</a>
+                        <a href="https://api.whatsapp.com/send/?phone=+74951230000" class="whatsapp contacts__whatsapp">
+                            <svg class="whatsapp__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                                width="50px" height="50px">
+                                <path
+                                    d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z" />
+                            </svg>
+                            <p class="watsapp__text fs10 fw600 lh13">Написать в WhatsApp</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__center">
+                    <a href="#" class="footer__politics fs13 lh17">
+                        Политика конфиденциальности
+                    </a>
+                    <div class="footer__inn">
+                        <p class="fs14 fw600 lh24">ИНН 656890098</p>
+                        <p class="fs14 fw600 lh24">ОГРН 787895436709</p>
+                    </div>
+                    <div class="footer__office">
+                        <p class="grey-text fs14 fw600 lh24">Офис и склад:</p>
+                        <p class="fs14 fw600 lh24">Москва, ул. Лизы Чайкиной 22</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+        </footer>
+
+    </main>
+</body>
+
+</html>
