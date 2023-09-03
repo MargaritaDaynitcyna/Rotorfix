@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
     swiper();
     rangeSales();
     rangeMarginality();
+    showsShop();
     maps();
 });
 
@@ -85,6 +86,25 @@ function rangeMarginality() {
     };
 
     rangeInputMarginality.addEventListener('input', rangeInputMarginalitySlider);
+}
+
+function showsShop() {
+    const btnList = document.querySelector('.show__list');
+    const btnCart = document.querySelector('.show__cart');
+
+    btnList.addEventListener('click', () => {
+        btnActive(btnList);
+    })
+    btnCart.addEventListener('click', () => {
+        btnActive(btnCart);
+    })
+
+    function btnActive(element) {
+        document.querySelector('.show__btn-is-active').style.zIndex='0';
+        document.querySelector('.show__btn-is-active').classList.remove('show__btn-is-active');
+        element.classList.add('show__btn-is-active');
+        element.style.zIndex='1';
+    };
 }
 
 function maps() {

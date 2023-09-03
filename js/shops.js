@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
     burgerMenu();
+    showsShop();
     maps();
 });
 
@@ -10,6 +11,25 @@ function burgerMenu() {
     document.querySelector("#close").addEventListener("click", () => {
         document.querySelector("#menu").classList.remove("nav__is-active")
     });
+}
+
+function showsShop() {
+    const btnList = document.querySelector('.show__list');
+    const btnCart = document.querySelector('.show__cart');
+
+    btnList.addEventListener('click', () => {
+        btnActive(btnList);
+    })
+    btnCart.addEventListener('click', () => {
+        btnActive(btnCart);
+    })
+
+    function btnActive(element) {
+        document.querySelector('.show__btn-is-active').style.zIndex='0';
+        document.querySelector('.show__btn-is-active').classList.remove('show__btn-is-active');
+        element.classList.add('show__btn-is-active');
+        element.style.zIndex='1';
+    };
 }
 
 function maps() {

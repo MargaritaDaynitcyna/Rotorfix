@@ -1463,9 +1463,13 @@ li {
   color: var(--white);
 }
 
+.show__cart {
+  z-index: 1;
+}
+
 .show__list {
   margin-left: -25px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .adress__img {
