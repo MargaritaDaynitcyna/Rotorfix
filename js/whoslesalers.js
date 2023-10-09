@@ -69,6 +69,7 @@ function rangeSales() {
     };
 
     rangeInputSales.addEventListener('input', rangeInputSalesSlider);
+    rangeInputSales.addEventListener('input', countMarginality);
 }
 
 function rangeMarginality() {
@@ -86,6 +87,16 @@ function rangeMarginality() {
     };
 
     rangeInputMarginality.addEventListener('input', rangeInputMarginalitySlider);
+    rangeInputMarginality.addEventListener('input', countMarginality);
+}
+
+function countMarginality() {
+    const cashMoney = document.querySelector('.cash__money'),
+        rangeInputSales = document.getElementById('range-input-sales'),
+        rangeInputMarginality = document.getElementById('range-input-marginality');
+    
+    const money = ((Number(rangeInputSales.value)*(Number(rangeInputMarginality.value)+50)).toFixed(0)).toString();
+    cashMoney.textContent = `${money} руб.`
 }
 
 function showsShop() {
